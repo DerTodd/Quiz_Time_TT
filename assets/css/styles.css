@@ -19,6 +19,22 @@ h1 {
     align-content: center;
     justify-content: center;
 }
+/*Setting the displays for the buttons */
+#nextButton{
+    display: none;
+}
+#submit1{
+    display:none;
+}
+#submit2{
+    display:none;
+}
+#submit3{
+    display:none;
+}
+#submit4{
+    display:none;
+}
 #mainGameBox{
     display: flex;
     width: 100%;
@@ -34,8 +50,23 @@ h1 {
     border: 2px solid black;
     width: 60%;
     box-shadow: 10px 20px 4px gray;
-    align-content: center;
-    justify-content: center;
+    align-content:center;
+    justify-content:center;
+    flex-direction: column;
+
+}
+#finishBox {
+    display: none;
+    position:absolute;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 60%;
+    box-shadow: 10px 20px 4px gray;
+    align-content:center;
+    justify-content:center;
+    flex-direction: column;
 
 }
 
@@ -51,22 +82,56 @@ h1 {
 }
 
 #startButton {
+    display: inline;
     border-radius: 5px;
     font-size: 2em;
     font-weight:  700;
     color: red;
 }
 #toeTag {
+    position: absolute;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
+    bottom: 15px;
+}
+
+#timerbox {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    align-content:center;
+    justify-content:center;
+}
+#formbox {
+    width: 100%;
+    text-align: center;
+    align-content:center;
+    justify-content:center;
+}
+#questionbox {
+    width: 100%;
+    text-align: center;
+    align-content:center;
+    justify-content:center;
+}
+#saveBox {
+    visibility: visible;
 }
 .timer {
     display: flex;
     text-align: center;
+    justify-content:center;
+    font-size: 2em;
 }
 .qBox {
     display: flex;
     text-align: center;
+}
+.addTime {
+    
+}
+.bullets {
+    list-style-type: none;
 }
